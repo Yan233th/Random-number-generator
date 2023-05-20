@@ -43,9 +43,56 @@ namespace GUI
             WindowState = WindowState.Minimized;
         }
 
-        private void Button_Click (object sender, RoutedEventArgs e)
+        private int isInteger (string input)
         {
+            if (int.TryParse (input, out int value))
+            {
+                if (value >= -1145141919 && value <= 1145141919)
+                {
+                    return 0;
+                }
+                else
+                {
+                    return 1; //超出范围
+                }
+            }
+            else
+            {
+                return -1; //不合法
+            }
+        }
 
+        private async void Start_Button_Click (object sender, RoutedEventArgs e)
+        {
+            Start_Button.IsEnabled = false;
+            if (isInteger (Start_TextBox.Text) != 0 || isInteger (End_TextBox.Text) != 0)
+            {
+                MessageBox.Show ("输入不是有效的整数值！");
+                return;
+            }
+            int Start = int.Parse (Start_TextBox.Text);
+            int End = int.Parse (End_TextBox.Text);
+            if (Start > End)
+            {
+                MessageBox.Show ("最小值大于最大值！");
+                return;
+            }
+            if (Start < -99 || End > 999)
+            {
+                MessageBox.Show ("数值超出范围！\n范围: -99 ~ 999");
+                return;
+            }
+            double gap = 1;
+            Random random = new Random ();
+            Result_TextBlock.Foreground = Brushes.Black;
+            while (gap < 1250)
+            {
+                await Task.Delay ((int) gap);
+                Result_TextBlock.Text = (random.Next (Start, End + 1)).ToString ();
+                gap *= 1.25;
+            }
+            Result_TextBlock.Foreground = Brushes.Red;
+            Start_Button.IsEnabled = true;
         }
     }
 }
