@@ -68,6 +68,7 @@ namespace GUI
             if (isInteger (Start_TextBox.Text) != 0 || isInteger (End_TextBox.Text) != 0)
             {
                 MessageBox.Show ("输入不是有效的整数值！");
+                Start_Button.IsEnabled = true;
                 return;
             }
             int Start = int.Parse (Start_TextBox.Text);
@@ -75,11 +76,13 @@ namespace GUI
             if (Start > End)
             {
                 MessageBox.Show ("最小值大于最大值！");
+                Start_Button.IsEnabled = true;
                 return;
             }
             if (Start < -99 || End > 999)
             {
                 MessageBox.Show ("数值超出范围！\n范围: -99 ~ 999");
+                Start_Button.IsEnabled = true;
                 return;
             }
             double gap = 1;
