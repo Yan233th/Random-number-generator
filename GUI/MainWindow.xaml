@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="300" Width="500" Icon="/logo1.png" WindowStyle="None" MouseDown="Window_MouseDown" ResizeMode="CanMinimize" Cursor="SizeAll">
     <Grid>
-        
+        <Image HorizontalAlignment="Left" Height="72" Margin="30,20,0,0" VerticalAlignment="Top" Width="72" Source="/logo1.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="120,25,0,0" TextWrapping="Wrap" Text="随机数生成" VerticalAlignment="Top" FontSize="36" FontFamily="Source Han Sans SC" FontWeight="Bold"/>
+        <Button x:Name="CloseButton" Content="X" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,20,20,0" Width="42" Height="36" FontSize="24" FontWeight="Bold" Click="CloseButton_Click"/>
+        <Button x:Name="MinimizeButton" Content="--" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,20,80,0" Width="42" Height="36" FontSize="24" FontWeight="Bold" Click="MinimizeButton_Click"/>
+
     </Grid>
 </Window>
