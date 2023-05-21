@@ -88,7 +88,7 @@ namespace GUI
             double gap = 1;
             Random random = new Random ();
             Result_TextBlock.Foreground = Brushes.Black;
-            while (gap < 1250)
+            while (gap < 1000)
             {
                 await Task.Delay ((int) gap);
                 Result_TextBlock.Text = (random.Next (Start, End + 1)).ToString ();

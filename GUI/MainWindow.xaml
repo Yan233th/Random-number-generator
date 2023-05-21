@@ -19,7 +19,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="48,128,0,0" TextWrapping="Wrap" Text="最小值" VerticalAlignment="Top" FontSize="24"/>
         <TextBox x:Name="Start_TextBox" HorizontalAlignment="Left" Margin="144,128,0,0" Text="1" VerticalAlignment="Top" Width="100" FontSize="24" TextAlignment="Center"/>
         <TextBox x:Name="End_TextBox" HorizontalAlignment="Left" Margin="144,183,0,0" VerticalAlignment="Top" Width="100" FontSize="24" TextAlignment="Center"/>
-        <Button x:Name="Start_Button" Content="开始" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="24" Width="72" Margin="0,0,0,25" Click="Start_Button_Click"/>
+        <Button x:Name="Start_Button" Content="开始" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="24" Width="72" Margin="0,0,0,25" Click="Start_Button_Click" IsDefault="True"/>
 
     </Grid>
 </Window>
