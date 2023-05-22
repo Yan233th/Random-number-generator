@@ -9,14 +9,14 @@
     <Grid>
         <Rectangle Height="300" Width="500" HorizontalAlignment="Center" VerticalAlignment="Center" Stroke="#FFBF00FF" StrokeThickness="3"/>
 
-        <TextBlock x:Name="Result_TextBlock" Margin="0,0,5,27" TextWrapping="Wrap" Text="?" VerticalAlignment="Bottom" Height="200" FontSize="140" TextAlignment="Center" HorizontalAlignment="Right" Width="245" FontWeight="Bold"/>
+        <TextBlock x:Name="Result_TextBlock" Margin="0,0,0,27" TextWrapping="Wrap" Text="?" VerticalAlignment="Bottom" Height="200" FontSize="135" TextAlignment="Center" HorizontalAlignment="Right" Width="250" FontWeight="Bold"/>
 
         <Image HorizontalAlignment="Left" Height="72" Margin="30,20,0,0" VerticalAlignment="Top" Width="72" Source="/logo1.png"/>
         <TextBlock HorizontalAlignment="Left" Margin="120,30,0,0" TextWrapping="Wrap" Text="随机数生成器" VerticalAlignment="Top" FontSize="36" FontWeight="Bold"/>
-        <Button x:Name="CloseButton" Content="X" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,32,32,0" Width="42" Height="36" FontSize="24" FontWeight="Bold" Click="CloseButton_Click"/>
-        <Button x:Name="MinimizeButton" Content="一" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,32,90,0" Width="42" Height="36" FontSize="24" FontWeight="Bold" Click="MinimizeButton_Click"/>
-        <TextBlock HorizontalAlignment="Left" Margin="48,185,0,0" TextWrapping="Wrap" Text="最大值" VerticalAlignment="Top" FontSize="24"/>
-        <TextBlock HorizontalAlignment="Left" Margin="48,128,0,0" TextWrapping="Wrap" Text="最小值" VerticalAlignment="Top" FontSize="24"/>
+        <Button x:Name="CloseButton" Content="X" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,30,30,0" Width="42" Height="36" FontSize="24" FontWeight="Bold" Click="CloseButton_Click"/>
+        <Button x:Name="MinimizeButton" Content="一" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,30,90,0" Width="42" Height="36" FontSize="24" FontWeight="Bold" Click="MinimizeButton_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="50,185,0,0" TextWrapping="Wrap" Text="最大值" VerticalAlignment="Top" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Margin="50,128,0,0" TextWrapping="Wrap" Text="最小值" VerticalAlignment="Top" FontSize="24"/>
         <TextBox x:Name="Start_TextBox" HorizontalAlignment="Left" Margin="144,128,0,0" Text="1" VerticalAlignment="Top" Width="100" FontSize="24" TextAlignment="Center"/>
         <TextBox x:Name="End_TextBox" HorizontalAlignment="Left" Margin="144,183,0,0" VerticalAlignment="Top" Width="100" FontSize="24" TextAlignment="Center"/>
         <Button x:Name="Start_Button" Content="开始" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="24" Width="72" Margin="0,0,0,25" Click="Start_Button_Click" IsDefault="True"/>
